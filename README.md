@@ -24,7 +24,7 @@ with a note saying why, or by hand by one of schryer's admins. It merges by itse
 once `state / valid` passes (`pubkit state --check`). The history of the file is
 the record of who changed what, and a revert is another pull request.
 
-Only schryer's admins and the "Sustenaut release control" app may write here, so
+Only schryer's admins and the "Sustenaut release state writer" app may write here, so
 no collaborators or teams with write access should be added.
 
 The design is the [release control plane](https://claude.ai/artifact/KGAd5vKckHCWbrKQCKMhSV).

@@ -2,9 +2,9 @@
 # the file's shape, that each repository exists under the owner, and that each
 # one to protect has a protect block in its pubkit.json.
 #
-# Reading those repositories takes the "Sustenaut release control" app: the
-# repository variable RELEASE_CONTROL_APP_ID and the secret
-# RELEASE_CONTROL_APP_KEY. Without them this fails and says so, because a check
+# Reading those repositories takes the "Sustenaut release reader" app: the
+# repository variable RELEASE_READER_APP_ID and the secret
+# RELEASE_READER_APP_KEY. Without them this fails and says so, because a check
 # that passes without looking would be worse than a red one.
 name: state
 
@@ -24,10 +24,10 @@ jobs:
       - name: The control app is set up
         run: |
           if [ -z "$APP_ID" ]; then
-            echo "::error::No RELEASE_CONTROL_APP_ID: state.json can't be checked until the Sustenaut release control app exists."
+            echo "::error::No RELEASE_READER_APP_ID: state.json can't be checked until the Sustenaut release reader app is set up here."
             exit 1
           fi
-        env: { APP_ID: '${{ vars.RELEASE_CONTROL_APP_ID }}' }
+        env: { APP_ID: '${{ vars.RELEASE_READER_APP_ID }}' }
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
         with: { persist-credentials: false }
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
@@ -36,8 +36,8 @@ jobs:
       - id: app
         uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
         with:
-          app-id: '${{ vars.RELEASE_CONTROL_APP_ID }}'
-          private-key: '${{ secrets.RELEASE_CONTROL_APP_KEY }}'
+          app-id: '${{ vars.RELEASE_READER_APP_ID }}'
+          private-key: '${{ secrets.RELEASE_READER_APP_KEY }}'
           owner: '${{ github.repository_owner }}'
           permission-contents: read
       - run: pubkit state --check
