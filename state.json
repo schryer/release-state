@@ -1,0 +1,17 @@
+{
+  "owner": "schryer",
+  "repos": {
+    "visit-ee": {
+      "project": "visit-ee",
+      "board": true,
+      "protect": true,
+      "govern": false
+    },
+    "recipes": {
+      "project": "recipes",
+      "board": true,
+      "protect": true,
+      "govern": false
+    }
+  }
+}

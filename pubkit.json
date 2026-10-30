@@ -1,0 +1,25 @@
+{
+  "kind": "utility",
+  "protect": {
+    "checks": [
+      "state / valid"
+    ],
+    "tags": false,
+    "queue": false,
+    "auto_merge": true
+  },
+  "github_app": {
+    "id": {
+      "from": "github-release-reader-id",
+      "to": "RELEASE_READER_APP_ID"
+    },
+    "installation_id": {
+      "from": "github-release-reader-installation-id",
+      "to": "RELEASE_READER_APP_INSTALLATION_ID"
+    },
+    "key": {
+      "from": "github-release-reader-key",
+      "to": "RELEASE_READER_APP_KEY"
+    }
+  }
+}
