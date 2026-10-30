@@ -1,0 +1,3 @@
+# The pubkit that checks state.json. `pubkit lock` pins it, with its dependencies
+# and their hashes, in requirements.lock.
+pubkit @ https://github.com/Sustenaut/pubkit/releases/download/v0.23.0/pubkit-0.23.0-py3-none-any.whl

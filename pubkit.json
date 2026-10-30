@@ -1,0 +1,11 @@
+{
+  "kind": "utility",
+  "protect": {
+    "checks": [
+      "state / valid"
+    ],
+    "tags": false,
+    "queue": false,
+    "auto_merge": true
+  }
+}
