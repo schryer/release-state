@@ -1,0 +1,24 @@
+{
+  "uses": [
+    {
+      "plugin": "bitwarden.secrets",
+      "paths": [
+        "with-secrets",
+        "with-secrets.json"
+      ]
+    },
+    {
+      "plugin": "github.app-token",
+      "paths": [
+        ".github/workflows/state.yml",
+        "pubkit.json"
+      ]
+    },
+    {
+      "plugin": "github.repo-ops",
+      "paths": [
+        ".github/workflows/state.yml"
+      ]
+    }
+  ]
+}
