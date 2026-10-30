@@ -1,8 +1,10 @@
 # release-state
 
 Which of schryer's repositories the release control plane acts on, in one file,
-[`state.json`](state.json). This repository is private because that file names
-private repositories.
+[`state.json`](state.json). This repository is public, so **don't add a private
+repository to that file**: its name would be public too. That would mean making
+this repository private first, and a private repository on GitHub Free can't
+carry a ruleset.
 
 ```json
 "some-repo": { "project": "pub", "board": true, "protect": true, "govern": false }
