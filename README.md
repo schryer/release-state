@@ -27,4 +27,13 @@ the record of who changed what, and a revert is another pull request.
 Only schryer's admins and the "Sustenaut release state writer" app may write here, so
 no collaborators or teams with write access should be added.
 
+## The reader app's values
+
+`pubkit.json` names them, in Bitwarden and on GitHub, and this sends them here:
+
+```sh
+./with-secrets ./pubkit app-secrets --check   # checks only, sends nothing
+./with-secrets ./pubkit app-secrets
+```
+
 The design is the [release control plane](https://claude.ai/artifact/KGAd5vKckHCWbrKQCKMhSV).
