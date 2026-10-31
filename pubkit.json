@@ -2,7 +2,8 @@
   "kind": "utility",
   "protect": {
     "checks": [
-      "state / valid"
+      "state / valid",
+      "integrations / scan"
     ],
     "tags": false,
     "queue": false,
