@@ -2,7 +2,7 @@
 # the file's shape, that each repository exists under the owner, and that each
 # one to protect has a protect block in its pubkit.json.
 #
-# Reading those repositories takes the "Sustenaut release reader" app: the
+# Reading those repositories takes the schryer-release-reader app: the
 # repository variable RELEASE_READER_APP_ID and the secret
 # RELEASE_READER_APP_KEY. Without them this fails and says so, because a check
 # that passes without looking would be worse than a red one.
@@ -24,7 +24,7 @@ jobs:
       - name: The control app is set up
         run: |
           if [ -z "$APP_ID" ]; then
-            echo "::error::No RELEASE_READER_APP_ID: state.json can't be checked until the Sustenaut release reader app is set up here."
+            echo "::error::No RELEASE_READER_APP_ID: state.json can't be checked until the schryer-release-reader app is set up here."
             exit 1
           fi
         env: { APP_ID: '${{ vars.RELEASE_READER_APP_ID }}' }
