@@ -1,3 +1,3 @@
-# The pubkit that checks state.json. `pubkit lock` pins it, with its dependencies
-# and their hashes, in requirements.lock.
-pubkit @ https://github.com/Sustenaut/pubkit/releases/download/v0.25.0/pubkit-0.25.0-py3-none-any.whl
+# What checks state.json is pubkit, which requirements-pubkit.txt pins; `pubkit lock` pins it,
+# with its dependencies and their hashes, in requirements.lock.
+-r requirements-pubkit.txt
