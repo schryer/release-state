@@ -2,7 +2,7 @@
   "owner": "schryer",
   "repos": {
     "recipes": {
-      "project": "recipes",
+      "project": "release",
       "board": true,
       "protect": true,
       "govern": false
@@ -10,14 +10,14 @@
     "release-controlplane": {
       "project": "release",
       "board": true,
-      "protect": false,
-      "govern": false
+      "protect": true,
+      "govern": true
     },
     "release-state": {
       "project": "release",
       "board": true,
       "protect": true,
-      "govern": false
+      "govern": true
     },
     "visit-ee": {
       "project": "visit-ee",
