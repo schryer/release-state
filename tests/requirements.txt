@@ -1,3 +1,4 @@
 # What checks state.json is pubkit, which requirements-pubkit.txt pins; `pubkit lock` pins it,
 # with its dependencies and their hashes, in requirements.lock.
 -r requirements-pubkit.txt
+pubfleet @ https://github.com/Sustenaut/pubfleet/releases/download/v0.1.0/pubfleet-0.1.0-py3-none-any.whl

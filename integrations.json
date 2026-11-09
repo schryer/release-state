@@ -3,7 +3,6 @@
     {
       "plugin": "bitwarden.secrets",
       "paths": [
-        "with-secrets",
         "with-secrets.json"
       ],
       "mode": "required"
@@ -25,5 +24,8 @@
       ],
       "mode": "required"
     }
+  ],
+  "own_hosts": [
+    "sustenaut.eu"
   ]
 }
