@@ -40,7 +40,7 @@ jobs:
           private-key: '${{ secrets.RELEASE_READER_APP_KEY }}'
           owner: '${{ github.repository_owner }}'
           permission-contents: read
-      - run: pubkit state --check
+      - run: pubfleet state --check
         env: { GH_TOKEN: '${{ steps.app.outputs.token }}' }
 
   # What merging would change, for whoever looks. It only reads, and nothing requires it.
